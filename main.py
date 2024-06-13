@@ -61,9 +61,19 @@ def __main__():
                 init_blake2s(bytes(s_s, 'UTF-8'))
         except ValueError:
             pass
-    
+
+    elif m_m == 'sha512' or m_m == 'SHA512' or m_m == 'Sha512':
+        try:
+            if s_s == None:
+                print(cl.fore_red+"[!] You need to enter a string!"+cl.reset)
+            elif len(s_s) > 1:
+                from module.SHA512 import init_sha512
+                init_sha512(bytes(s_s, 'UTF-8'))
+        except ValueError:
+            pass
+
     else:
-        print(cl.back_red+"[!] Do ' python3 ./main.py -h '"+cl.reset)
+        print(cl.back_red+"[!] Something goes wrong during the program execution, try to do 'python3 ./main.py -h'"+cl.reset)
 
 # Execute
 if __name__ == '__main__':
