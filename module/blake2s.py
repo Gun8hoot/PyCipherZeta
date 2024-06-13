@@ -1,11 +1,12 @@
+from Crypto.Hash import BLAKE2s
 from module.color import cl
 from module.report import wreport
-from Crypto.Hash import MD5
-method = "MD5"
+import random
+method = "BLAKE2S"
 
-def init_md5(string):
-    h_str = MD5.new()
-    h_str.update(bytes(string, 'UTF-8'))
-    hashed = h_str.hexdigest()
+def init_blake2s(string):
+    h_obj = BLAKE2s.new(digest_bits=256)
+    h_obj.update(bytes(string, 'UTF-8'))
+    hashed = h_obj.hexdigest()
     print(f"{cl.fore_lavander}[!] The SHA3-256 hash for '{string}' is: {cl.reset}{cl.back_green+cl.fore_black}{hashed}{cl.reset}")
     wreport(method, string, hashed, '')

@@ -19,7 +19,7 @@ def __main__():
                 print(cl.fore_red+"[!] You need to enter a string!"+cl.reset)
             elif len(s_s) > 1:
                 from module.AES import init_aes
-                init_aes(bytes(s_s, 'UTF-8'))
+                init_aes(s_s)
         except ValueError:
             pass
 
@@ -48,7 +48,7 @@ def __main__():
                 print(cl.fore_red+"[!] You need to enter a string!"+cl.reset)
             elif len(s_s) > 1:
                 from module.Blowfish import init_blowfish
-                init_blowfish(bytes(s_s, 'UTF-8'))
+                init_blowfish(s_s)
         except ValueError:
             pass
 
@@ -58,7 +58,7 @@ def __main__():
                 print(cl.fore_red+"[!] You need to enter a string!"+cl.reset)
             elif len(s_s) > 1:
                 from module.blake2s import init_blake2s
-                init_blake2s(bytes(s_s, 'UTF-8'))
+                init_blake2s(s_s)
         except ValueError:
             pass
 
@@ -68,7 +68,7 @@ def __main__():
                 print(cl.fore_red+"[!] You need to enter a string!"+cl.reset)
             elif len(s_s) > 1:
                 from module.SHA512 import init_sha512
-                init_sha512(bytes(s_s, 'UTF-8'))
+                init_sha512(s_s)
         except ValueError:
             pass
 
