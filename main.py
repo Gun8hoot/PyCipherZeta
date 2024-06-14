@@ -27,15 +27,15 @@ def __main__():
             print(cl.back_red+"[!] Something goes wrong during the program execution, try to do 'python3 ./main.py -h'"+cl.reset)
     except ValueError:
         print(cl.back_red+"[!] Something goes wrong during the program execution, try to do 'python3 ./main.py -h'"+cl.reset)
-
+# -------
 def __encrypt__():
     if m_m == "AES" or m_m == "aes":
         try:
             if s_s == None:
                 print(cl.fore_red+"[!] You need to enter a string!"+cl.reset)
             elif len(s_s) > 1:
-                from module.AES import init_aes
-                init_aes(s_s)
+                from module.AES import encod_aes
+                encod_aes(s_s)
         except ValueError:
             pass
 
@@ -99,6 +99,7 @@ def __encrypt__():
             pass
     pass
 
+
 def __decrypt__():
     if m_m == 'base64' or m_m == 'BASE64' or m_m == 'Base64':
         try:
@@ -116,4 +117,3 @@ def __decrypt__():
 # Execute
 if __name__ == '__main__':
     __main__()
-

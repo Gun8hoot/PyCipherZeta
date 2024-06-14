@@ -4,9 +4,9 @@ from module.report import wreport
 import random
 method = "BLAKE2S"
 
-def init_blake2s(string):
+def encod_blake2s(string):
     h_obj = BLAKE2s.new(digest_bits=256)
     h_obj.update(bytes(string, 'UTF-8'))
     hashed = h_obj.hexdigest()
-    print(f"{cl.fore_lavander}[!] The SHA3-256 hash for '{string}' is: {cl.reset}{cl.back_green+cl.fore_black}{hashed}{cl.reset}")
+    print(f"[!] The BLAKE2S chain for {cl.fore_orange}{string}{cl.reset} is: {cl.reset}{cl.fore_green}{hashed}{cl.reset}")
     wreport(method, string, hashed, '')
