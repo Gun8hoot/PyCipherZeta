@@ -23,7 +23,7 @@ pip install -r ./requirements.txt
 ```
 - Execute the program with: 
 ```sh
-python3 ./main.py (-e or -d) -m (ALGORITHM) -s (STRING)
+python3 ./main.py -e/-d -m (ALGORITHM) -s (STRING)
 ```
 
 ## Example
