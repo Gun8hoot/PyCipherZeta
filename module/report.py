@@ -2,7 +2,7 @@ import os, sys, time
 
 def wreport(method, string, encoded, key):
     path = "report/"
-    curr_time = time.strftime('-%Hh_%Mmin_%Ssec-%d_%m_%Y')
+    curr_time = time.strftime('-%H:%M:%S-%d_%m_%Y')
 
     try:
         os.makedirs("report/")

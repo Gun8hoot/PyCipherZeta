@@ -26,6 +26,16 @@ pip install -r ./requirements.txt
 python3 ./main.py -e/-d -m (ALGORITHM) -s (STRING)
 ```
 
+### Arguments
+| Arguments                   |                    Description                             |
+| :---                        |    :----:                                                  |
+| -s , -S , -str , --string   | Specify the string to encode/decode                        |
+| -m , -M , --method          | Choose the wanted algorithm                                |
+| -k , -k , --key             | You need this arguments if decode a symmetric or asymmetric cipher        |
+| -o , -O , --output          | You need this arguments if you want encode a string        |
+| -e , -E , --encode          | You need this arguments if you want encode a string        |
+| -d , -D , --decode          | You need this arguments if you want decode a string        |
+
 ## Example
 Input:
 ```sh

@@ -9,6 +9,6 @@ def encod_sha256(string):
     h_str = SHA3_256.new()
     h_str.update(bytes(string, 'UTF-8'))
     hashed = h_str.hexdigest()
-    print(f"[!] The SHA3-256 hash for {cl.fore_orange}{string}{cl.reset} is: {cl.reset}{cl.fore_green}{hashed}{cl.reset}")
+    print(f"[!] The SHA3-256 hash for {cl.fore_orange}{string}{cl.reset} is: \n{cl.reset}{cl.fore_green}{hashed}{cl.reset}")
     wreport(method, string, hashed, '')
 

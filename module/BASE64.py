@@ -13,5 +13,5 @@ def encod_base64(string):
 def decod_base64(string):
     b64_dec = base64.b64decode(bytes(string, 'UTF-8'))
     decoded = b64_dec.decode('UTF-8')
-    print(f"[!] The BASE64 decoded string for {cl.fore_orange}{string}{cl.reset} is: {cl.reset}{cl.fore_green}{decoded}{cl.reset}")
+    print(f"[!] The BASE64 decoded string for {cl.fore_orange}{string}{cl.reset} is:\n {cl.reset}{cl.fore_green}{decoded}{cl.reset}")
     wreport(method,string,decoded,'')
