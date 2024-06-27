@@ -37,11 +37,15 @@ python3 ./main.py -e/-d -m (ALGORITHM) -s (STRING)
 | -d , -D , --decode          | You need this arguments if you want decode a string        |
 
 ## Example
-Input:
+**Input:**
 ```sh
 python3 ./main.py -m SHA512 -m HelloWorld
 ```
-Output:
+**Output:**
 ```sh
 [!] The SHA3-512 hash for HelloWorld is: 60846a2369ad408101216c7f952be7019559acfa146e6b5c51d0a18424a620a22e937e5650ed332cbdb9ebe21f03f86207078958e0ef7b60bb285851cf9f9a32 
-```
+```    
+
+###
+> ***Project write in:***       
+> [![S/O skillicons for the py & md icon](https://skillicons.dev/icons?i=python,markdown&theme=dark)](https://skillcons.dev/)
